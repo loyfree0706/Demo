@@ -1,3 +1,11 @@
+var timer;
+
+setTimeout(function () {
+
+$(".delay").css('display','initial');
+
+}, 100)
+
 var app = new Vue({
     el: '.app',
     data:{
@@ -58,4 +66,7 @@ var app = new Vue({
             this.todolist.splice(index,1)
         }
     },
+    created: function(){
+        
+    }
 })
